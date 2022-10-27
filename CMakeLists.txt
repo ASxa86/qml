@@ -20,3 +20,13 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 	Qt::3DCore
 	Qt::Widgets
 )
+
+find_package(SFML CONFIG COMPONENTS graphics window system)
+find_package(glad CONFIG REQUIRED)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE
+	sfml-window
+	sfml-graphics
+	sfml-system
+	OpenGL32
+)
