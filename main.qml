@@ -1,18 +1,16 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import Triangles
 
 ApplicationWindow {
 	id: window
-	width: 2000
-	height: 800
+	x: 70
+	y: 70
+	width: 1200
+	height: 500
 	title: "qml"
 	visible: true
-
-	// Action {
-	// 	shortcut: StandardKey.Escape
-	// 	onTriggered: window.close()
-	// }
 
 	RowLayout {
 		id: mainLayout
@@ -95,7 +93,26 @@ ApplicationWindow {
 				color: "darkCyan"
 				Layout.fillWidth: true
 				Layout.fillHeight: true
+				clip: true
 				// implicitWidth: 640
+
+				Triangles {
+					// anchors.fill: parent
+					// anchors.centerIn: parent
+					x: 0
+					y: 0
+					delegate: Rectangle {
+
+						width: 100
+						height: 100
+						color: "darkGreen"
+
+						Text {
+							anchors.centerIn: parent
+							text: "Hello"
+						}
+					}
+				}
 			}
 		}
 
