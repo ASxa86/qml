@@ -9,7 +9,7 @@ int main(int argc, char** argv)
 	//QQuickWindow::setGraphicsApi(QSGRendererInterface::GraphicsApi::OpenGL);
 
 	QQmlApplicationEngine engine;
-	engine.load(QUrl::fromLocalFile("D:/qml/main.qml"));
+	engine.load(QUrl::fromLocalFile(":/qml/main.qml"));
 
 	//QQuickView view;
 	//view.setSource(QUrl::fromLocalFile("D:/qml/main.qml"));

@@ -5,6 +5,6 @@
   "description": "QML test repo",
   "homepage": "https://github.com/asxa86/qml/",
   "dependencies": [
-    "qt"
+    "qtdeclarative"
   ]
 }
